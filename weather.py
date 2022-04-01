@@ -20,7 +20,13 @@ def fetch_weather(woeid):
 
 def display_weather(weather):
     print(f"Weather for {weather['title']}:")
-    print("Replace this message with the weather report!")
+    for day in weather['consolidated_weather']:
+        date = day['applicable_date']
+        high = day['max_temp']
+        low = day['min_temp']
+        state = day['weather_state_name']
+        print(f"{date}\t{state}\thigh {high:2.1f}°C\tlow {low:2.1f}°C")
+        
 
 def disambiguate_locations(locations):
     print("Ambiguous location! Did you mean:")
