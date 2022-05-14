@@ -1,4 +1,4 @@
 # Udacity_practice_area
 
-A place to add programs created while learning on Udacity
-Practice using git and other learning purposes
+* A place used for learning purposes while following code walktrough on Udacity
+* Practice using git and other educational purposes
